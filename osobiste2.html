@@ -21,6 +21,8 @@
 
   <!-- Custom CSS -->
   <link href="css/stylish-portfolio.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
 
   <style>
     main {
@@ -29,22 +31,22 @@
       margin-right: auto;
       padding-top: 100px;
     }
-  
+
     .pagination {
       margin-top: 100px;
       margin-left: auto;
       margin-right: auto;
       width: 396px;
     }
-  
+
     .white {
       color: white;
     }
-  
+
     .black {
       color: black;
     }
-  
+
     .pagination a {
       /* margin: auto; */
       float: left;
@@ -52,14 +54,36 @@
       text-decoration: none;
       transition: background-color .3s;
     }
-  
+
     .pagination a.active {
       background-color: dodgerblue;
       color: white;
     }
-  
+
     .pagination a:hover:not(.active) {
       background-color: #ddd;
+    }
+
+    .mySlides {
+      display: none;
+    }
+
+    body,
+    html {
+      height: 100%;
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .tekst {
+      width: 700px;
+      margin-bottom: 50px;
+    }
+
+    .max {
+      width: 375px;
+      margin-left: auto;
+      margin-right: auto;
     }
   </style>
 
@@ -97,10 +121,106 @@
 
 
   <main>
-    <h1>Praca nadgarstka 2/8</h1>
+    <h1>Ułożenie nadgarstka 2/8</h1>
+
+
+    <p class="tekst">
+      Trzeba pamiętać, że jedynym obszarem ręki rzucającej, który nie dotyka piłki, jest mała szczelina pośrodku dłoni.
+      Takie
+      ułożenie piłki zwiększa kontrolę nad nią.
+      Wykonanie rzutu z prostym nadgarstkiem to kolejny z najczęstszych problemów dla zaczynających naukę.
+      Gracze, którzy to robią, często popychają piłkę w kierunku obręczy (płaski rzut) zamiast rzucać do kosza.
+      Idealna pozycją nadgarstka jest wygięcie tak daleko, jak to jest możliwe (zwykle trochę przed 90 stopni).
+      Zapewni to dodatkową moc strzału i stworzy niezbędny backspin wymagany do bycia dobrym strzelcem.
+
+    </p>
+
+    <div class="w3-content w3-display-container">
+
+      <div class="w3-display-container mySlides">
+        <div class="center" style="display:flex; justify-content:center;">
+          <img src="folder2-nadgarstek/dobrze1.jpg" style="width:auto; height:500px;">
+        </div>
+        <div class="max w3-display-center w3-medium w3-container w3-padding-16 w3-black">
+          Poprawnie ułożony nadgarstek 1/6
+        </div>
+      </div>
+
+      <div class="w3-display-container mySlides">
+        <div class="center" style="display:flex; justify-content:center;">
+          <img src="folder2-nadgarstek/Dobrze2.jpg" style="width:auto; height:500px;">
+        </div>
+        <div class="max w3-display-center w3-medium w3-container w3-padding-16 w3-black">
+          Poprawnie ułożony nadgarstek 2/6
+        </div>
+      </div>
+
+      <div class="w3-display-container mySlides">
+        <div class="center" style="display:flex; justify-content:center;">
+          <img src="folder2-nadgarstek/dobrze3.jpg" style="width:auto; height:500px;">
+        </div>
+        <div class="max w3-display-center w3-medium w3-container w3-padding-16 w3-black">
+          Poprawnie ułożony nadgarstek 3/6
+        </div>
+      </div>
+
+
+      <div class="w3-display-container mySlides">
+        <div class="center" style="display:flex; justify-content:center;">
+          <img src="folder2-nadgarstek/zle1.jpg" style="width:auto; height:500px;">
+        </div>
+        <div class="max w3-display-center w3-medium w3-container w3-padding-16 w3-black">
+          Źle ułożony nadgarstek 4/6
+        </div>
+      </div>
+
+      <div class="w3-display-container mySlides">
+        <div class="center" style="display:flex; justify-content:center;">
+          <img src="folder2-nadgarstek/zle2.jpg" style="width:auto; height:500px;">
+        </div>
+        <div class="max w3-display-center w3-medium w3-container w3-padding-16 w3-black">
+          Źle ułożony nadgarstek 5/6
+        </div>
+      </div>
+
+
+      <div class="w3-display-container mySlides">
+        <div class="center" style="display:flex; justify-content:center;">
+          <img src="folder2-nadgarstek/zle3.jpg" style="width:auto; height:500px;">
+        </div>
+        <div class="max w3-display-center w3-medium w3-container w3-padding-16 w3-black">
+          Źle ułożony nadgarstek 6/6
+        </div>
+      </div>
+
+      <button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+      <button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+
+    </div>
   </main>
-  
-  
+
+
+  <script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      if (n > x.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = x.length }
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      x[slideIndex - 1].style.display = "block";
+    }
+  </script>
+
+
   <div class="pagination">
     <a class="black" href="osobiste1.html">&laquo;</a>
     <a class="black" href="osobiste1.html">1</a>
@@ -113,6 +233,8 @@
     <a class="black" href="osobiste8.html">8</a>
     <a class="black" href="osobiste3.html">&raquo;</a>
   </div>
+
+
 
 
   <!-- Footer -->
