@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 
 <head>
 
@@ -21,19 +21,30 @@
 
   <!-- Custom CSS -->
   <link href="css/stylish-portfolio.min.css" rel="stylesheet">
-
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <style>
+    .mySlides {
+      display: none;
+    }
+
+    body,
+    html {
+      height: 100%;
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
     main {
       width: 80%;
-      margin-left:auto;
-      margin-right:auto;
+      margin-left: auto;
+      margin-right: auto;
       padding-top: 100px;
     }
 
     .pagination {
       margin-top: 100px;
       margin-left: auto;
-      margin-right:auto;
+      margin-right: auto;
       width: 396px;
     }
 
@@ -62,14 +73,25 @@
       background-color: #ddd;
     }
 
-    .pagination a:nth-child(1){
-      color:white;
-    }
-    .pagination a:hover:nth-child(1) {
-      background-color:white ;
-      color:white;
+    .pagination a:nth-child(1) {
+      color: white;
     }
 
+    .pagination a:hover:nth-child(1) {
+      background-color: white;
+      color: white;
+    }
+
+    .tekst {
+      width: 700px;
+      margin-bottom: 50px;
+    }
+
+    .max{
+      width: 375px;
+      margin-left: auto;
+      margin-right: auto;
+    }
   </style>
 
 </head>
@@ -105,7 +127,92 @@
 
   <main>
     <h1>Ułożenie dłoni na piłce 1/8</h1>
+
+    <p class="teskt">Po złapaniu piłki, gracze muszą być w stanie szybko dostosować swoje ręce do prawidłowych pozycji na piłce.
+      Ręka rzucająca musi znajdować się pod piłką, a druga obok podtrzymywać piłkę.
+      Kciuk strzelającej ręki i podstawa kciuka na dłoni powinny tworzyć „T” (jak na zdjęciu).
+      Innym ważnym, ale pomijanym szczegółem jest to, że palce powinny być rozłożone wygodnie na piłce.
+      Te zmiany muszą nastąpić natychmiast po otrzymaniu piłki.
+    </p>
+
+    <div class="w3-content w3-display-container">
+
+      <div class="w3-display-container mySlides">
+        <div class="center" style="display:flex; justify-content:center;">
+          <img src="folder1-dlonie/Dobrze.jpg" style="width:auto; height:500px;">
+        </div>
+        <div class="max w3-display-center w3-medium w3-container w3-padding-16 w3-black">
+          Poprawnie ułożone dłonie 1/5
+        </div>
+      </div>
+
+      <div class="w3-display-container mySlides">
+        <div class="center" style="display:flex; justify-content:center;">
+          <img src="folder1-dlonie/Zle1.jpg" style="width:auto; height:500px;">
+        </div>
+        <div class="max w3-display-center w3-medium w3-container w3-padding-16 w3-black">
+          Źle ułożone dłonie 2/5
+        </div>
+      </div>
+
+      <div class="w3-display-container mySlides">
+        <div class="center" style="display:flex; justify-content:center;">
+          <img src="folder1-dlonie/zle2.jpg" style="width:auto; height:500px;">
+        </div>
+        <div class="max w3-display-center w3-medium w3-container w3-padding-16 w3-black">
+          Źle ułożone dłonie 3/5
+        </div>
+      </div>
+
+
+      <div class="w3-display-container mySlides">
+        <div class="center" style="display:flex; justify-content:center;">
+          <img src="folder1-dlonie/zle3.jpg" style="width:auto; height:500px;">
+        </div>
+        <div class="max w3-display-center w3-medium w3-container w3-padding-16 w3-black">
+          Źle ułożone dłonie 4/5
+        </div>
+      </div>
+
+      <div class="w3-display-container mySlides">
+        <div class="center" style="display:flex; justify-content:center;">
+          <img src="folder1-dlonie/zle4.jpg" style="width:auto; height:500px;">
+        </div>
+        <div class="max w3-display-center w3-medium w3-container w3-padding-16 w3-black">
+          Źle ułożone dłonie 5/5
+        </div>
+      </div>
+
+      <button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+      <button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+
+    </div>
+
   </main>
+
+
+
+
+  <script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      if (n > x.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = x.length }
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      x[slideIndex - 1].style.display = "block";
+    }
+  </script>
+
 
 
   <div class="pagination">
