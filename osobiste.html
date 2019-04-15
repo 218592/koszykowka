@@ -22,6 +22,139 @@
   <!-- Custom CSS -->
   <link href="css/stylish-portfolio.min.css" rel="stylesheet">
 
+
+
+  <style>
+    body,
+    html {
+      height: 100%;
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .hero-image {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("start/StartPicture.png");
+      height: 100%;
+      background-position: 50% 0%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+    }
+
+    .hero-text {
+      text-align: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+    }
+
+    .hero-text button {
+      border: none;
+      outline: 0;
+      display: inline-block;
+      padding: 10px 25px;
+      color: black;
+      background-color: #ddd;
+      text-align: center;
+      cursor: pointer;
+    }
+
+
+    a.button {
+      margin-right: 20px;
+      position: relative;
+      display: inline-block;
+      width: 16.6em;
+      height: 6.3em;
+      overflow: hidden;
+      vertical-align: middle;
+      text-align: left;
+      text-decoration: none;
+      line-height: 1.5em;
+      font-size: 1rem;
+      color: #1070CA;
+      cursor: pointer;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      transition: -webkit-transform 0.5s;
+      transition: transform 0.5s;
+      transition: transform 0.5s, -webkit-transform 0.5s;
+    }
+
+    a.button svg {
+      z-index: 1;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    a.button svg g line,
+    a.button svg g polyline,
+    a.button svg g circle {
+      fill: none;
+      stroke: #425A70;
+    }
+
+    a.button svg g line,
+    a.button svg g polyline {
+      stroke-miterlimit: 10;
+    }
+
+    a.button svg g circle {
+      display: block;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-width: 0.066em;
+      stroke-dasharray: 200;
+      stroke-dashoffset: 0;
+      transition: stroke-dashoffset ease-out 0.5s;
+    }
+
+    a.button p {
+      z-index: 2;
+      position: relative;
+      display: inline-block;
+      text-transform: uppercase;
+      font-family: "Roboto", Helvetica, Arial, sans-serif;
+      font-size: 1em;
+      margin-bottom: 400px;
+    }
+
+    a.button:hover {
+      -webkit-transform: translateZ(0) translateX(0.5em);
+      transform: translateZ(0) translateX(0.5em);
+    }
+
+    a.button:hover svg g circle {
+      stroke-dashoffset: 200;
+    }
+
+    main {
+      padding-top: 100px;
+      width: 90%;
+      margin: auto;
+    }
+
+    .parent-flex {
+      display: flex;
+    }
+
+    .text {
+      width: 55%;
+      padding-right: 30px;
+    }
+
+    .links {
+      width: 45%;
+      display: flex;
+      flex-wrap: wrap;
+    }
+  </style>
+
+
+
 </head>
 
 <body id="page-top">
@@ -58,10 +191,151 @@
 
 
 
-  lol
-  osobiste.html
+  <div class="hero-image">
+    <div class="hero-text">
+      <h1 style="font-size:50px">Rzuty osobiste</h1>
+      <p>Poradnik w kilku krokach</p>
+    </div>
+  </div>
 
 
+
+  <main>
+
+    <div class="parent-flex">
+
+      <div class="text">
+
+        <p>W koszykówce jedną z najważneiszych umiejętności jest rzut.
+        Bycie świetnym strzelcem zaowocuje nie tylko większą ilością punktów dla ciebie, ale także większą ilością punktów dla
+        twoich kolegów z drużyny. Żadna osoba na Ziemi nie urodziła się z umiejętnością rzucania piłkina wysokim poziomie.
+        </p>
+        <ul> 
+        <li> Nie Steph Curry</li>
+        <li> Nie Ray Allen </li>
+        <li> Nie Reggie Miller </li>
+        <li> Nie Kevin Durant </li>
+        </ul>
+        Wszyscy ci gracze rozpoczęli swoją przygodę z koszykówką z takimi samymi zdolnościami strzeleckimi, jak ty, ja i wszyscy
+        inni gracze.
+        Więc co ich oddziela od reszty? Stali się jednymi z najlepszych strzelców, którzy kiedykolwiek postawili stopę na boisku
+        do koszykówki przez wiele godzin i godzin rutynowych powtórzeń rzutów na sali.
+        Każdy gracz, który pewnego dnia chce zostać świetnym strzelcem, musi być gotowy na lata ciężkiej pracy, aby uzyskać
+        świetną skuteczność.
+        Poniższy tutorial pomoże zapoznać się z fundamentami techniki rzutu osobistego.
+
+
+      </div>
+
+      <div class="links">
+
+
+        <div class="button-arrow">
+          <a href="osobiste1.html" class="button"><svg>
+              <g>
+                <line x2="227.62" y1="31.28" y2="31.28"></line>
+                <polyline points="222.62 25.78 228.12 31.28 222.62 36.78"></polyline>
+                <circle cx="224.67" cy="30.94" r="30.5"
+                  transform="rotate(180 224.67 30.94) scale(1, -1) translate(0, -61)">
+                </circle>
+              </g>
+            </svg>
+            <p>Ułożenie dłoni</p>
+          </a>
+        </div>
+
+
+        <div class="button-arrow">
+          <a href="osobiste2.html" class="button"><svg>
+              <g>
+                <line x2="227.62" y1="31.28" y2="31.28"></line>
+                <polyline points="222.62 25.78 228.12 31.28 222.62 36.78"></polyline>
+                <circle cx="224.67" cy="30.94" r="30.5"
+                  transform="rotate(180 224.67 30.94) scale(1, -1) translate(0, -61)">
+                </circle>
+              </g>
+            </svg>
+            <p>Praca nadgarstka</p>
+          </a>
+        </div>
+
+
+        <div class="button-arrow">
+          <a href="osobiste3.html" class="button"><svg>
+              <g>
+                <line x2="227.62" y1="31.28" y2="31.28"></line>
+                <polyline points="222.62 25.78 228.12 31.28 222.62 36.78"></polyline>
+                <circle cx="224.67" cy="30.94" r="30.5"
+                  transform="rotate(180 224.67 30.94) scale(1, -1) translate(0, -61)">
+                </circle>
+              </g>
+            </svg>
+            <p>Położenie łokcia</p>
+          </a>
+        </div>
+
+
+        <div class="button-arrow">
+          <a href="osobiste4.html" class="button"><svg>
+              <g>
+                <line x2="227.62" y1="31.28" y2="31.28"></line>
+                <polyline points="222.62 25.78 228.12 31.28 222.62 36.78"></polyline>
+                <circle cx="224.67" cy="30.94" r="30.5"
+                  transform="rotate(180 224.67 30.94) scale(1, -1) translate(0, -61)">
+                </circle>
+              </g>
+            </svg>
+            <p>Ruch ciała</p>
+          </a>
+        </div>
+
+
+        <div class="button-arrow">
+          <a href="osobiste5.html" class="button"><svg>
+              <g>
+                <line x2="227.62" y1="31.28" y2="31.28"></line>
+                <polyline points="222.62 25.78 228.12 31.28 222.62 36.78"></polyline>
+                <circle cx="224.67" cy="30.94" r="30.5"
+                  transform="rotate(180 224.67 30.94) scale(1, -1) translate(0, -61)">
+                </circle>
+              </g>
+            </svg>
+            <p>Ustawienie nóg</p>
+          </a>
+        </div>
+
+        <div class="button-arrow">
+          <a href="osobiste1.html" class="button"><svg>
+              <g>
+                <line x2="227.62" y1="31.28" y2="31.28"></line>
+                <polyline points="222.62 25.78 228.12 31.28 222.62 36.78"></polyline>
+                <circle cx="224.67" cy="30.94" r="30.5"
+                  transform="rotate(180 224.67 30.94) scale(1, -1) translate(0, -61)">
+                </circle>
+              </g>
+            </svg>
+            <p>Trajektoria piłki</p>
+          </a>
+        </div>
+
+        <div class="button-arrow">
+          <a href="osobiste1.html" class="button"><svg>
+              <g>
+                <line x2="227.62" y1="31.28" y2="31.28"></line>
+                <polyline points="222.62 25.78 228.12 31.28 222.62 36.78"></polyline>
+                <circle cx="224.67" cy="30.94" r="30.5"
+                  transform="rotate(180 224.67 30.94) scale(1, -1) translate(0, -61)">
+                </circle>
+              </g>
+            </svg>
+            <p>Absurdalne rzuty</p>
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+  </main>
 
 
 
