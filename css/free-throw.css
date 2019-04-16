@@ -1,0 +1,79 @@
+   main {
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+      padding-top: 100px;
+    }
+
+    .pagination {
+      margin-top: 100px;
+      margin-left: auto;
+      margin-right: auto;
+      width: 396px;
+    }
+
+    .white {
+      color: white;
+    }
+
+    .black {
+      color: black;
+    }
+
+    .pagination a {
+      /* margin: auto; */
+      float: left;
+      padding: 8px 16px;
+      text-decoration: none;
+      transition: background-color .3s;
+    }
+
+    .pagination a.active {
+      background-color: dodgerblue;
+      color: white;
+    }
+
+    .pagination a:hover:not(.active) {
+      background-color: #ddd;
+    }
+
+
+    .mySlides {
+      display: none;
+    }
+
+    body,
+    html {
+      height: 100%;
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .tekst {
+      width: 700px;
+      margin-bottom: 50px;
+    }
+
+    .tekst1 {
+      width: 700px;
+      margin-bottom: 10px;
+    }
+
+
+    .max {
+      width: 375px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .marginh2 {
+      margin-top: 60px;
+      margin-bottom: 30px;
+    }
+
+    .cen{
+      width: 260px;
+      margin-left: auto;
+      margin-right: auto;
+
+    }

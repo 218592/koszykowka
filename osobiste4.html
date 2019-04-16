@@ -21,47 +21,9 @@
 
   <!-- Custom CSS -->
   <link href="css/stylish-portfolio.min.css" rel="stylesheet">
+  <link href="css/free-throw.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
-  <style>
-    main {
-      width: 80%;
-      margin-left: auto;
-      margin-right: auto;
-      padding-top: 100px;
-    }
-  
-    .pagination {
-      margin-top: 100px;
-      margin-left: auto;
-      margin-right: auto;
-      width: 396px;
-    }
-  
-    .white {
-      color: white;
-    }
-  
-    .black {
-      color: black;
-    }
-  
-    .pagination a {
-      /* margin: auto; */
-      float: left;
-      padding: 8px 16px;
-      text-decoration: none;
-      transition: background-color .3s;
-    }
-  
-    .pagination a.active {
-      background-color: dodgerblue;
-      color: white;
-    }
-  
-    .pagination a:hover:not(.active) {
-      background-color: #ddd;
-    }
-  </style>
 
 
 </head>
@@ -95,23 +57,133 @@
     </ul>
   </nav>
 
-    <main>
-      <h1>Ułożenie ciała 4/8</h1>
-    </main>
-    
-    
-    <div class="pagination">
-      <a class="black" href="osobiste3.html">&laquo;</a>
-      <a class="black" href="osobiste1.html">1</a>
-      <a class="black" href="osobiste2.html">2</a>
-      <a class="black" href="osobiste3.html">3</a>
-      <a class="black active" href="osobiste4.html">4</a>
-      <a class="black" href="osobiste5.html">5</a>
-      <a class="black" href="osobiste6.html">6</a>
-      <a class="black" href="osobiste7.html">7</a>
-      <a class="black" href="osobiste8.html">8</a>
-      <a class="black" href="osobiste5.html">&raquo;</a>
+  <main>
+    <h1>Ułożenie łokcia 3/8</h1>
+
+    <p class="tekst1">
+      Położenie ciała podczas rzutu osobistego musi być wygodne i naturalne. Podstawowe zasady i wskazówki są
+      następujące: </p>
+
+    <ul class="tekst">
+      <li>ustaw się twarzą do kosza</li>
+      <li>staraj się żeby po schyleniu się do przygotowania się do rzutu twoje kolana nie wychodziły do przodu za
+        linię stóp</li>
+      <li>plecy muszą być proste, jeśli będziesz się schylał do przodu lub do tylu to stracisz równowagę, a po
+        wykonianu dużej ilości rzutów będzie odczuwalny ból w plecach i kolanach</li>
+    </ul>
+
+
+    <div class="w3-content w3-display-container">
+
+      <div class="w3-display-container mySlides">
+        <div class="center" style="display:flex; justify-content:center;">
+          <img src="folder4-cialo/dobrze.jpg" style="width:auto; height:500px;">
+        </div>
+        <div class="max w3-display-center w3-medium w3-container w3-padding-16 w3-black">
+          Poprawnie ułożone ciało do rzutu 1/6
+        </div>
+      </div>
+
+      <div class="w3-display-container mySlides">
+        <div class="center" style="display:flex; justify-content:center;">
+          <img src="folder4-cialo/zle1.jpg" style="width:auto; height:500px;">
+        </div>
+        <div class="max w3-display-center w3-medium w3-container w3-padding-16 w3-black">
+          Błędnie ułożone ciało do rzutu 2/6
+        </div>
+      </div>
+
+      <div class="w3-display-container mySlides">
+        <div class="center" style="display:flex; justify-content:center;">
+          <img src="folder4-cialo/zle2.jpg" style="width:auto; height:500px;">
+        </div>
+        <div class="max w3-display-center w3-medium w3-container w3-padding-16 w3-black">
+          Błędnie ułożone ciało do rzutu 3/6
+        </div>
+      </div>
+
+      <div class="w3-display-container mySlides">
+        <div class="center" style="display:flex; justify-content:center;">
+          <img src="folder4-cialo/zle3.jpg" style="width:auto; height:500px;">
+        </div>
+        <div class="max w3-display-center w3-medium w3-container w3-padding-16 w3-black">
+          Błędnie ułożone ciało do rzutu 4/6
+        </div>
+      </div>
+
+      <div class="w3-display-container mySlides">
+        <div class="center" style="display:flex; justify-content:center;">
+          <img src="folder4-cialo/zle4.jpg" style="width:auto; height:500px;">
+        </div>
+        <div class="max w3-display-center w3-medium w3-container w3-padding-16 w3-black">
+          Błędnie ułożone ciało do rzutu 5/6
+        </div>
+      </div>
+
+      <div class="w3-display-container mySlides">
+        <div class="center" style="display:flex; justify-content:center;">
+          <img src="folder4-cialo/zle5.jpg" style="width:auto; height:500px;">
+        </div>
+        <div class="max w3-display-center w3-medium w3-container w3-padding-16 w3-black">
+          Błędnie ułożone ciało do rzutu 6/6
+        </div>
+      </div>
+
+     
+
+      <button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+      <button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+
     </div>
+
+    <!-- <h2 class="marginh2"> Przykład poprawnego rzutu </h2>
+
+
+    <div class="cen">
+      <video width="260" height="500" controls>
+        <source src="folder3-lokiec/Perfekcyjnie.mp4" type="video/mp4">
+      </video>
+    </div> -->
+
+  </main>
+
+
+  <script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      if (n > x.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = x.length }
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      x[slideIndex - 1].style.display = "block";
+    }
+  </script>
+
+  </main>
+
+
+
+  <div class="pagination">
+    <a class="black" href="osobiste3.html">&laquo;</a>
+    <a class="black" href="osobiste1.html">1</a>
+    <a class="black" href="osobiste2.html">2</a>
+    <a class="black" href="osobiste3.html">3</a>
+    <a class="black active" href="osobiste4.html">4</a>
+    <a class="black" href="osobiste5.html">5</a>
+    <a class="black" href="osobiste6.html">6</a>
+    <a class="black" href="osobiste7.html">7</a>
+    <a class="black" href="osobiste8.html">8</a>
+    <a class="black" href="osobiste5.html">&raquo;</a>
+  </div>
 
 
   <!-- Footer -->
