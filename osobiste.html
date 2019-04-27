@@ -139,6 +139,7 @@
 
     .parent-flex {
       display: flex;
+      flex-wrap: wrap;
     }
 
     .text {
@@ -151,6 +152,20 @@
       display: flex;
       flex-wrap: wrap;
     }
+
+     @media screen and (max-width: 600px) {
+      .text {
+      width: 100%;
+      margin-bottom: 50px;
+    }
+
+    .links {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    }
+
   </style>
 
 
