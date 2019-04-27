@@ -59,6 +59,35 @@
       margin-bottom: 10px;
     }
 
+    .green {
+     background-color: green;
+     color: white;
+    }
+
+    .red{
+      background-color: red;
+      color: white;
+    }
+
+    .tekst {
+      width: 700px;
+      margin-bottom: 50px;
+    }
+
+     @media screen and (max-width: 992px) {
+      .tekst, .tekst1{
+        width: 100%;
+      }
+
+      .mvideo{
+        width: 380px;
+      }
+    }
+
+    .pagination a:hover:nth-child(10) {
+      background-color: white;
+      color: white;
+    }
 
     .max {
       width: 375px;

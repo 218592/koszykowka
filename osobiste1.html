@@ -49,8 +49,30 @@
     }
 
     .white {
+      color: white;  
+    }
+
+    .green {
+     background-color: green;
+     color: white;
+    }
+
+    .red{
+      background-color: red;
       color: white;
     }
+
+    .tekst {
+      width: 700px;
+      margin-bottom: 50px;
+    }
+
+     @media screen and (max-width: 992px) {
+      .tekst{
+        width: 100%;
+      }
+    }
+
 
     .black {
       color: black;
@@ -82,12 +104,7 @@
       color: white;
     }
 
-    .tekst {
-      width: 700px;
-      margin-bottom: 50px;
-    }
-
-    .max{
+    .max {
       width: 375px;
       margin-left: auto;
       margin-right: auto;
@@ -125,7 +142,8 @@
   <main>
     <h1>Ułożenie dłoni na piłce 1/8</h1>
 
-    <p class="tekst">Po złapaniu piłki, gracze muszą być w stanie szybko dostosować swoje ręce do prawidłowych pozycji na piłce.
+    <p class="tekst">Po złapaniu piłki, gracze muszą być w stanie szybko dostosować swoje ręce do prawidłowych pozycji
+      na piłce.
       Ręka rzucająca musi znajdować się pod piłką, a druga obok podtrzymywać piłkę.
       Kciuk strzelającej ręki i podstawa kciuka na dłoni powinny tworzyć „T” (jak na zdjęciu).
       Innym ważnym, ale pomijanym szczegółem jest to, że palce powinny być rozłożone wygodnie na piłce.
@@ -138,7 +156,7 @@
         <div class="center" style="display:flex; justify-content:center;">
           <img src="folder1-dlonie/Dobrze.jpg" style="width:auto; height:500px;">
         </div>
-        <div class="max w3-display-center w3-medium w3-container w3-padding-16 w3-black">
+        <div class="green max w3-display-center w3-medium w3-container w3-padding-16">
           Poprawnie ułożone dłonie 1/5
         </div>
       </div>
@@ -147,7 +165,7 @@
         <div class="center" style="display:flex; justify-content:center;">
           <img src="folder1-dlonie/Zle1.jpg" style="width:auto; height:500px;">
         </div>
-        <div class="max w3-display-center w3-medium w3-container w3-padding-16 w3-black">
+        <div class="max w3-display-center w3-medium w3-container w3-padding-16 red">
           Źle ułożone dłonie 2/5
         </div>
       </div>
@@ -156,7 +174,7 @@
         <div class="center" style="display:flex; justify-content:center;">
           <img src="folder1-dlonie/zle2.jpg" style="width:auto; height:500px;">
         </div>
-        <div class="max w3-display-center w3-medium w3-container w3-padding-16 w3-black">
+        <div class="max w3-display-center w3-medium w3-container w3-padding-16 red">
           Źle ułożone dłonie 3/5
         </div>
       </div>
@@ -166,7 +184,7 @@
         <div class="center" style="display:flex; justify-content:center;">
           <img src="folder1-dlonie/zle3.jpg" style="width:auto; height:500px;">
         </div>
-        <div class="max w3-display-center w3-medium w3-container w3-padding-16 w3-black">
+        <div class="max w3-display-center w3-medium w3-container w3-padding-16 red">
           Źle ułożone dłonie 4/5
         </div>
       </div>
@@ -175,7 +193,7 @@
         <div class="center" style="display:flex; justify-content:center;">
           <img src="folder1-dlonie/zle4.jpg" style="width:auto; height:500px;">
         </div>
-        <div class="max w3-display-center w3-medium w3-container w3-padding-16 w3-black">
+        <div class="max w3-display-center w3-medium w3-container w3-padding-16 red">
           Źle ułożone dłonie 5/5
         </div>
       </div>
@@ -213,7 +231,7 @@
 
 
   <div class="pagination">
-    <a class="white" href="#">&laquo;</a>
+    <a class="white" >&nbsp;</a>
     <a class="active black" href="osobiste1.html">1</a>
     <a class="black" href="osobiste2.html">2</a>
     <a class="black" href="osobiste3.html">3</a>
