@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Quiz</title>
+
+
+	<link rel="stylesheet" href="assets/bootstrap.min.css" />
+	<link rel="stylesheet" href="assets/stylesheet.css" />
+
+	<!-- Custom Fonts -->
+	<link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic"
+		rel="stylesheet" type="text/css">
+	<link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+
+	<!-- Custom CSS -->
+	<link href="css/stylish-portfolio.min.css" rel="stylesheet">
+</head>
+
+<body>
+	<a class="menu-toggle rounded" href="#">
+		<i class="fas fa-bars"></i>
+	</a>
+	<nav id="sidebar-wrapper">
+		<ul class="sidebar-nav">
+			<li class="sidebar-brand">
+				<a class="js-scroll-trigger" href="index.html">Basket.io</a>
+			</li>
+			<li class="sidebar-nav-item">
+				<a class="js-scroll-trigger" href="osobiste.html">Rzut osobisty</a>
+			</li>
+			<li class="sidebar-nav-item">
+				<a class="js-scroll-trigger" href="dwutakt.html">Dwutakt</a>
+			</li>
+			<li class="sidebar-nav-item">
+				<a class="js-scroll-trigger" href="wsad.html">Wsad</a>
+			</li>
+			<li class="sidebar-nav-item">
+				<a class="js-scroll-trigger" href="3punkty.html">Rzut za 3 punkty</a>
+			</li>
+		</ul>
+	</nav>
+	<div class="container">
+		<div class="row">
+			<div class="col quiz-center">
+				<h1>BasketQuiz</h1>
+				<div id="question-image" class="text-center"></div>
+				<div id="question" class="">
+					<h3 id="question-title"></h3>
+					<div id="answers"></div>
+
+					<button class="btn btn-block btn-danger" id="send_answer">WYŚLIJ</button>
+					<button class="btn btn-block btn-success hide" id="next_question">NASTĘPNY</button>
+				</div>
+
+				<div id="scores" class="hide text-center">
+					<h3>Twój wynik: <span id="score"></span></h3>
+					<a href="" class="btn btn-danger btn-block">JESZCZE RAZ</a>
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+		crossorigin="anonymous"></script>
+
+	<!-- Bootstrap core JavaScript -->
+	<script src="vendor/jquery/jquery.min.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+	<!-- Plugin JavaScript -->
+	<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+	<!-- Custom scripts for this template -->
+	<script src="js/stylish-portfolio.min.js"></script>
+	<script src="quiz.js"></script>
+</body>
+
+</html>
