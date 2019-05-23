@@ -126,7 +126,39 @@ function getQuestions() {
 					}
 				],
 				"correct": "2"
-			}
+			},
+						{
+				"id": "6",
+				"title": "Czy zaprezentowane na zdjęciu ułożenie nadgarstka jest prawidłowe?",
+				"imageUrl": "photos/Dobrze2.jpg",
+				"answers": [
+					{
+						"id": "0",
+						"answer": "Nie"
+					},
+					{
+						"id": "1",
+						"answer": "Tak"
+					}
+				],
+				"correct": "1"
+			},
+						{
+				"id": "7",
+				"title": "Czy zaprezentowana na zdjęciu postawa jest prawidłowa?",
+				"imageUrl": "photos/zle1.jpg",
+				"answers": [
+					{
+						"id": "0",
+						"answer": "Nie"
+					},
+					{
+						"id": "1",
+						"answer": "Tak"
+					}
+				],
+				"correct": "0"
+						}
 		]
 	questionsCount = questions.length;
 	currentQuestion = 0;
